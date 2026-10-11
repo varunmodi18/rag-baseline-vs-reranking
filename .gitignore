@@ -1,0 +1,11 @@
+Failed to create stream fd: Operation not permitted
+Failed to create stream fd: Operation not permitted
+Failed to create stream fd: Operation not permitted
+.venv/
+.cache/
+__pycache__/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+*.partial
