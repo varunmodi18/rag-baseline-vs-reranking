@@ -1,0 +1,166 @@
+[
+  {
+    "query_id": "Q01",
+    "answer": "answer1",
+    "word_count": 75,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q01",
+    "answer": "answer2",
+    "word_count": 73,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q02",
+    "answer": "answer1",
+    "word_count": 79,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q02",
+    "answer": "answer2",
+    "word_count": 159,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q04",
+    "answer": "answer1",
+    "word_count": 68,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q04",
+    "answer": "answer2",
+    "word_count": 69,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q06",
+    "answer": "answer1",
+    "word_count": 68,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q06",
+    "answer": "answer2",
+    "word_count": 68,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q08",
+    "answer": "answer1",
+    "word_count": 51,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q08",
+    "answer": "answer2",
+    "word_count": 43,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q16",
+    "answer": "answer1",
+    "word_count": 31,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q16",
+    "answer": "answer2",
+    "word_count": 52,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q19",
+    "answer": "answer1",
+    "word_count": 195,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": true
+  },
+  {
+    "query_id": "Q19",
+    "answer": "answer2",
+    "word_count": 157,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [
+      "p027-57c858daa3"
+    ],
+    "has_chunk_citation": true,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q24",
+    "answer": "answer1",
+    "word_count": 107,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [],
+    "has_chunk_citation": false,
+    "citations_within_selected_context": true,
+    "reached_token_limit": false
+  },
+  {
+    "query_id": "Q24",
+    "answer": "answer2",
+    "word_count": 169,
+    "requested_word_limit": 130,
+    "cited_chunk_ids": [
+      "p026-7e43913843"
+    ],
+    "has_chunk_citation": true,
+    "citations_within_selected_context": true,
+    "reached_token_limit": true
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "source_sha256": "d9ab89576b5ae2cfb3ba37781110788dea27a85a5079496dbfc1a79834670afd",
+  "corpus_sha256": "fdc0eb99d1bd8edf3a0efbebf5d635f7d2cfc777e492640c62dc20a351c0c8ac",
+  "model_ids": {
+    "dense": "sentence-transformers/all-MiniLM-L6-v2",
+    "cross": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "llm": "Qwen/Qwen2.5-0.5B-Instruct"
+  },
+  "model_revisions": {
+    "sentence-transformers/all-MiniLM-L6-v2": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "cross-encoder/ms-marco-MiniLM-L6-v2": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "Qwen/Qwen2.5-0.5B-Instruct": "7ae557604adf67be50417f59c2c2f167def9a775"
+  },
+  "dense_limit": 256,
+  "chunk_token_cap": 230,
+  "cross_limit": 512,
+  "dense_pooling": "attention-mask mean; L2 normalization",
+  "index": "FAISS IndexFlatIP exact cosine via normalized inner product",
+  "dense_batch_size": 16,
+  "cross_batch_size": 10,
+  "retrieved_candidates": 10,
+  "selected_contexts": 3,
+  "cross_score": "raw classification logit",
+  "cross_tie_break": "original dense rank",
+  "seed": 2025202040,
+  "device": "CPU",
+  "torch_threads": 4,
+  "faiss_threads": 1,
+  "llm_dtype": "bfloat16",
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 240,
+    "use_cache": true,
+    "num_beams": 1,
+    "repetition_penalty": 1.0
+  },
+  "prompt_template_sha256": "fdb7de018705b3cb84cdd4841e278ea13f0f31f1a562c9ff17e1a68ebf0dd2c7",
+  "query_set_sha256": "a87ea5e7e5624b0a829d9a42d4587451eafce19349d74bf4ffbd69a46b11beb2",
+  "python": "3.11.17 (main, Oct  3 2026, 01:05:36) [Clang 22.1.3 ]",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "cpu": "13th Gen Intel Core i7-13620H",
+  "logical_cpus": 16,
+  "timing_repetitions_per_query": 7,
+  "selection_disclosure": "Deliberately selected from 24 exploratory queries after inspecting ranks; not an unbiased benchmark. No corpus/model/chunk changes after exploration.",
+  "frozen_before_final_run": true,
+  "packages": {
+    "torch": "2.14.1+cpu",
+    "transformers": "4.57.1",
+    "sentence-transformers": "5.1.1",
+    "faiss-cpu": "1.15.1",
+    "PyMuPDF": "1.28.2",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0",
+    "reportlab": "5.0.1",
+    "huggingface-hub": "0.36.2"
+  }
+}

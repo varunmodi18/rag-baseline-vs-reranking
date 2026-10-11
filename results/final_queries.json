@@ -1,0 +1,42 @@
+[
+  {
+    "query_id": "Q01",
+    "category": "exception",
+    "question": "Must users change passwords every 90 days, and what if a password has been compromised?"
+  },
+  {
+    "query_id": "Q02",
+    "category": "exception",
+    "question": "Can an eight-character password be used when it is part of multi-factor authentication?"
+  },
+  {
+    "query_id": "Q04",
+    "category": "negation",
+    "question": "Is a voiceprint allowed as the biometric factor for authentication?"
+  },
+  {
+    "query_id": "Q06",
+    "category": "keyword_trap",
+    "question": "Does a local PIN that unlocks an authenticator need the same 15-character length as a login password?"
+  },
+  {
+    "query_id": "Q08",
+    "category": "negation",
+    "question": "Can a synced passkey be used at AAL3 if it is phishing-resistant?"
+  },
+  {
+    "query_id": "Q16",
+    "category": "control",
+    "question": "How long may an out-of-band authentication take, and can the same code be accepted twice?"
+  },
+  {
+    "query_id": "Q19",
+    "category": "negation",
+    "question": "Can a password hint be displayed to a person who has not authenticated?"
+  },
+  {
+    "query_id": "Q24",
+    "category": "keyword_trap",
+    "question": "Is checking a password blocklist supposed to reject every dictionary word occurring inside a long passphrase?"
+  }
+]

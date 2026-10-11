@@ -1,0 +1,68 @@
+{
+  "Q01": {
+    "short_observation": "Answer 2 invents a 90-day rotation requirement.",
+    "answer1_quality": "mostly correct; unsupported urgency wording",
+    "answer2_quality": "incorrect rule; answer regression",
+    "detailed_assessment": "Baseline rejects arbitrary password rotation, consistent with the equivalent usability clause; its immediate-change wording is stronger than the text. Answer 2 incorrectly requires rotation every 90 days while quoting a prohibition on periodic changes. Both contexts contain essential evidence, so this is an answer regression, not a candidate-retrieval failure. Neither answer supplies requested chunk/page citations.",
+    "answer1_sha256": "4a86b449176b7cc37b2c73cd0e561fec05a2f4c5d3f344360c28cb539eac6afb",
+    "answer2_sha256": "739416f6abccded46d3b2ab3d53b54bfc23847ce9352e632c3d9261b72bac11a"
+  },
+  "Q02": {
+    "short_observation": "Wrong six-character MFA minimum corrected to eight.",
+    "answer1_quality": "correct yes/no, incorrect minimum and role constraint",
+    "answer2_quality": "correct substantive rule and MFA exception",
+    "detailed_assessment": "Answer 1 says yes but incorrectly makes six characters the required minimum and requires a multi-factor authenticator. It conflates the local activation-secret recommendation (SHOULD be six, SHALL be four) with the centrally verified MFA-password requirement. The actual central rule is absent from baseline top three. After the chunk moves 8 → 1, Answer 2 states the single-factor minimum of fifteen and the MFA-only minimum of eight, retaining MAY/SHALL distinctions. This corrects the mistaken rule and recovers the exception. Neither answer gives requested chunk/page citations, and Answer 2 exceeds the requested 130 words.",
+    "source_excerpt": "Verifiers and CSPs SHALL require passwords that are used as a single-factor authentication mechanism to be a minimum of 15 characters in length. Verifiers and CSPs MAY allow passwords that are only used as part of multi-factor authentication processes to be shorter but SHALL require them to be a minimum of eight characters in length.",
+    "answer1_sha256": "2961e26d8fa2147999a8b7463b7d6fbc22379c3699fa6f1ad69cf3185b2f1cbe",
+    "answer2_sha256": "f41c7e52fbcada5a884e260cb05d25add389dddeda615c3ad4ae0bf0adca14d4"
+  },
+  "Q04": {
+    "short_observation": "Correct no, but both rationales lack voice prohibition.",
+    "answer1_quality": "correct conclusion; invented classification and unsupported reasoning",
+    "answer2_quality": "correct conclusion; unsupported reasoning",
+    "detailed_assessment": "The indispensable voice-prohibition chunk moves 8 → 9, remaining outside both top-three contexts. Baseline retrieves a glossary definition mentioning voice prints and incorrectly says they are behavioral, not biological, then infers exclusion. Reranking promotes a general biometrics definition mentioning voice patterns, not the prohibition. Both generated conclusions happen to be correct, but the supplied general MFA/nonbiometric-option rules do not establish a voice ban. This is an unresolved negation and keyword-distractor failure, with unsupported rationales rather than a wrong yes/no answer.",
+    "answer1_sha256": "cc7bb38836cbb9489f7801cdb01f50c8f64a8ce166ec086d4e0ba16b96f97b65",
+    "answer2_sha256": "b29b54e9309126f384e61b11a4ddbe53dc1c3a4fb0cee2a89d2d182ca6312896"
+  },
+  "Q06": {
+    "short_observation": "Answer 1 correct four; Answer 2 incorrectly says fifteen.",
+    "answer1_quality": "correct four-character minimum and six-character recommendation",
+    "answer2_quality": "incorrect rule; answer regression",
+    "detailed_assessment": "The activation-secret rule stays rank 1 → 1 in both contexts. Baseline correctly distinguishes a four-character required minimum and six-character recommendation for local PINs. Answer 2 wrongly applies the fifteen-character centrally verified single-factor password minimum, contradicting its own quotation of the local rule. This is answer-level sensitivity to the other retrieved passages, not failure to retrieve the indispensable chunk.",
+    "answer1_sha256": "20c12a3f641faba19c59ad7fc6d370976f6514306ada36580f7b6953d77888f7",
+    "answer2_sha256": "d67b34651ea992c6c2c754b77aabab896df33df2164a61fe6fcabf06f136aff1"
+  },
+  "Q08": {
+    "short_observation": "Answer 2 fixes AAL3 ban; equivalent evidence already present.",
+    "answer1_quality": "incorrect conditional permission despite non-exportability conflict",
+    "answer2_quality": "correct prohibition and reason",
+    "detailed_assessment": "Baseline already contains equivalent Appendix B evidence at dense rank 1, so this is not an indispensable-evidence recovery. The explicit normative ban from PDF page 20 moves 8 → 1 while the Appendix B equivalent moves 1 → 4. Baseline wrongly suggests a synced passkey can meet the non-exportability condition. Answer 2 correctly prohibits syncable authenticators at AAL3 because syncing requires an exportable key. This is an answer improvement from changing emphasis/order, distinct from the two required evidence-gap cases.",
+    "answer1_sha256": "df94bb6dea92db833c6c3e9cd3dbe71d16e54ae03124bf51d4dcc8f7d487afd3",
+    "answer2_sha256": "f30849294ea5e4becd03e9925abd75233077dc6557f2c5626e2c6595976e64db"
+  },
+  "Q16": {
+    "short_observation": "Wrong 24-hour code timeout corrected to ten minutes.",
+    "answer1_quality": "incorrect time limit; unsupported one-use statement",
+    "answer2_quality": "correct ten-minute validity and one-use condition",
+    "detailed_assessment": "Baseline wrongly applies the AAL2 session-reauthentication timeout of twenty-four hours to a single out-of-band authentication transaction. Its one-use assertion is correct in the source document but unsupported by the three supplied excerpts. The indispensable verifier chunk contains both the ten-minute completion limit and acceptance only once during its validity period. It moves 10 → 1. Answer 2 explicitly recovers both conditions and fixes the timeout error. This is complete recovery of the required evidence and a substantive answer improvement. Neither answer provides the requested chunk/page IDs; referring to the first excerpt is less precise than the requested citation format.",
+    "source_excerpt": "In all cases, the authentication SHALL be considered invalid unless completed within 10 minutes. Verifiers SHALL accept a given authentication secret as valid only once during the validity period to provide replay resistance, as described in Sec. 3.2.7.",
+    "answer1_sha256": "fa813db22f01b85521f7535a84dabacda166ecebecf79952841d36bbf78c219c",
+    "answer2_sha256": "6cb774a3c14b1fb3d69b7f6221b629cdafcdcf652ad12d5ea9be88611765f2d1"
+  },
+  "Q19": {
+    "short_observation": "Both say no without evidence; Answer 2 cites wrong clause.",
+    "answer1_quality": "correct conclusion; unsupported inference; truncated output",
+    "answer2_quality": "correct conclusion; unsupported rationale and misleading citation",
+    "detailed_assessment": "The actual ban on hints accessible to unauthenticated claimants is in PDF page 25, absent from the initial ten candidates. Both pipelines therefore lack the essential rule. Baseline admits the excerpts lack a specific prohibition, yet infers one from glossary entries; the response reaches the 240-token cap and ends mid-sentence. Answer 2 cites a real selected chunk (p027-57c858daa3) about mistyping allowances, which does not support the asserted hint prohibition or claim that password display is only for authenticated users. The yes/no conclusion agrees with the full source, but neither answer is adequately grounded in its supplied context. The reranker cannot recover a missing candidate.",
+    "answer1_sha256": "5b4f1e2b3038e721a0c8413bb0e18667dee89d3601c5b30ab320556899c1e193",
+    "answer2_sha256": "deebb0bd7489bd53b4385e678f51f0cdc6a4a424ab3cbabc4a2f921f4bcaf7c7"
+  },
+  "Q24": {
+    "short_observation": "Both say no; Answer 2 states whole-password rule, then truncates.",
+    "answer1_quality": "correct conclusion and broad blocklist rationale; omits decisive comparison unit",
+    "answer2_quality": "correct explicit whole-password rule; truncated output",
+    "detailed_assessment": "The essential whole-password-not-substrings clause is already in baseline top three (2 → 1 for the overlapping chunk). Baseline concludes no using blocklist size/throttling discussion but does not state the decisive comparison unit. Answer 2 explicitly quotes the entire-password rule and includes a valid supporting chunk/page citation. Its response reaches the 240-token generation cap and ends in an incomplete second citation. This is clarification of an already recovered rule, not a new indispensable-evidence promotion.",
+    "answer1_sha256": "0e22b0016069d07588783446d45262537f881005e2694df16a90590aad57b104",
+    "answer2_sha256": "ba01cd409038e9aaad80e346b89f02a92de740143c828ad7dd4d836289c30020"
+  }
+}

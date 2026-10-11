@@ -1,0 +1,24 @@
+{
+  "timer": "time.perf_counter",
+  "warmup": "Each final question embedded/retrieved and scored before profiling; LLM warmup separate",
+  "dense_scope": "query tokenization+embedding+normalization+exact top10 search+first3 ID selection",
+  "rerank_scope": "10 pair tokenization+one batched cross-encoder inference+deterministic sorting+first3 ID selection",
+  "two_stage_scope": "calculated as measured shared dense cost plus measured reranker overhead within the same repetition",
+  "excluded": [
+    "PDF processing",
+    "document embeddings",
+    "index construction",
+    "downloads",
+    "model loading",
+    "LLM inference"
+  ],
+  "cpu": "Intel Core i7-13620H",
+  "torch_threads": 4,
+  "cross_batch": 10,
+  "device": "CPU",
+  "repetitions_per_query": 7,
+  "total_samples": 56,
+  "query_order": "Deterministically shuffled within each repetition",
+  "GPU_synchronization": "Not applicable: CPU synchronous",
+  "LLM_generation": "Wall-clock inference only; tokenization excluded; saved separately in final_results.jsonl"
+}

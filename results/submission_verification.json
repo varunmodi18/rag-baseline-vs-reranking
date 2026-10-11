@@ -1,0 +1,14 @@
+{
+  "clean_kernel_execution": true,
+  "sequential_executed_code_cells": 11,
+  "notebook_errors": 0,
+  "final_queries": 8,
+  "actual_answers": 16,
+  "fresh_timing_samples": 56,
+  "repetitions_per_query": 7,
+  "reviewed_answers_match_clean_run": true,
+  "report_pdf_pages": 4,
+  "latency_tables_match_raw_samples": true,
+  "pdf_text_within_page_boundaries": true,
+  "source_and_report_visual_review": "Two decisive source pages and all four report pages inspected; final rendering reviewed again before publication."
+}

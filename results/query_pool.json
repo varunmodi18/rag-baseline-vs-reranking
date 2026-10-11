@@ -1,0 +1,474 @@
+[
+  {
+    "query_id": "Q01",
+    "category": "exception",
+    "question": "Must users change passwords every 90 days, and what if a password has been compromised?",
+    "reference_answer": "No periodic changes; force a change on evidence of compromise.",
+    "evidence_anchors": [
+      "SHALL NOT require subscribers to change passwords periodically"
+    ],
+    "evidence_groups": [
+      [
+        "p025-0a88aa8f78",
+        "p084-7623bddeb9"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        25,
+        84
+      ]
+    ]
+  },
+  {
+    "query_id": "Q02",
+    "category": "exception",
+    "question": "Can an eight-character password be used when it is part of multi-factor authentication?",
+    "reference_answer": "Yes; single-factor requires 15 characters; MFA-only passwords can be at least eight.",
+    "evidence_anchors": [
+      "minimum of 15 characters"
+    ],
+    "evidence_groups": [
+      [
+        "p025-ba87ffc2ee"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        25
+      ]
+    ]
+  },
+  {
+    "query_id": "Q03",
+    "category": "exception",
+    "question": "Does the ban on email authentication also forbid emailing a recovery code or an address confirmation code?",
+    "reference_answer": "No. Email cannot be used for out-of-band authentication, but address confirmation and recovery codes are not authentication processes and are exempt.",
+    "evidence_anchors": [
+      "Confirmation codes that are sent to validate email addresses"
+    ],
+    "evidence_groups": [
+      [
+        "p031-712d650583",
+        "p059-23e8293186"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        31,
+        59
+      ]
+    ]
+  },
+  {
+    "query_id": "Q04",
+    "category": "negation",
+    "question": "Is a voiceprint allowed as the biometric factor for authentication?",
+    "reference_answer": "No; biometric comparison based on voice must not be used.",
+    "evidence_anchors": [
+      "Biometric comparison based on voice"
+    ],
+    "evidence_groups": [
+      [
+        "p043-bafdb07455"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        43
+      ]
+    ]
+  },
+  {
+    "query_id": "Q05",
+    "category": "role_constraint",
+    "question": "Can fingerprint matching alone authenticate a subscriber, without a physical authenticator?",
+    "reference_answer": "No; biometrics only as MFA with a physical authenticator; a non-biometric alternative must always be offered.",
+    "evidence_anchors": [
+      "Biometrics SHALL only be used as part of multi-factor"
+    ],
+    "evidence_groups": [
+      [
+        "p043-9c01328395",
+        "p018-7ccca9b464",
+        "p019-e836b5f27e"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        43,
+        18,
+        19
+      ]
+    ]
+  },
+  {
+    "query_id": "Q06",
+    "category": "keyword_trap",
+    "question": "Does a local PIN that unlocks an authenticator need the same 15-character length as a login password?",
+    "reference_answer": "No; local activation secrets require at least four characters and should be at least six, may be numeric, and remain local.",
+    "evidence_anchors": [
+      "Authenticators that use activation secrets SHALL require"
+    ],
+    "evidence_groups": [
+      [
+        "p049-5edd86be13"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        49
+      ]
+    ]
+  },
+  {
+    "query_id": "Q07",
+    "category": "exception",
+    "question": "Must entering an authenticator activation PIN always be a separate operation from unlocking a managed smartphone?",
+    "reference_answer": "Normally separate, and the same factor may be reused. Agencies may relax separation for CSP-managed authenticators with short agency-defined inactivity timeouts and compliant device activation factors.",
+    "evidence_anchors": [
+      "Submitting the activation factor SHALL be a separate operation"
+    ],
+    "evidence_groups": [
+      [
+        "p050-cc5e1f77e2"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        50
+      ]
+    ]
+  },
+  {
+    "query_id": "Q08",
+    "category": "negation",
+    "question": "Can a synced passkey be used at AAL3 if it is phishing-resistant?",
+    "reference_answer": "No; AAL3 private keys must be non-exportable; syncable authenticators need exportable keys and are prohibited.",
+    "evidence_anchors": [
+      "syncable authenticators SHALL NOT be used at AAL3"
+    ],
+    "evidence_groups": [
+      [
+        "p020-1dc211d4b2",
+        "p103-630c4a45cd"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        20,
+        103
+      ]
+    ]
+  },
+  {
+    "query_id": "Q09",
+    "category": "keyword_trap",
+    "question": "Does capturing a face with a phone camera automatically prove authentication intent?",
+    "reference_answer": "No; incidental face capture may not prove intent. An explicit mechanism such as tapping a button must be provided.",
+    "evidence_anchors": [
+      "The presentation of biometric characteristics does not always establish"
+    ],
+    "evidence_groups": [
+      [
+        "p048-7cc9eea613",
+        "p048-9eabb9d855"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        48,
+        48
+      ]
+    ]
+  },
+  {
+    "query_id": "Q10",
+    "category": "control",
+    "question": "Are passwords considered replay-resistant authenticators?",
+    "reference_answer": "No; the same password is supplied each time.",
+    "evidence_anchors": [
+      "passwords are not considered replay-resistant"
+    ],
+    "evidence_groups": [
+      [
+        "p047-d0cd8015c0"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        47
+      ]
+    ]
+  },
+  {
+    "query_id": "Q11",
+    "category": "role_constraint",
+    "question": "When the verifier and identity provider are separate entities, what protects their communications?",
+    "reference_answer": "A mutually authenticated protected channel using approved cryptography.",
+    "evidence_anchors": [
+      "If the verifier and CSP or IdP are separate entities"
+    ],
+    "evidence_groups": [
+      [
+        "p047-b3169e47d9"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        47
+      ]
+    ]
+  },
+  {
+    "query_id": "Q12",
+    "category": "exception",
+    "question": "May a verifier trim leading and trailing whitespace from a submitted password?",
+    "reference_answer": "Yes, limited mistyping allowances are permitted if required minimum length remains and complexity is not significantly reduced.",
+    "evidence_anchors": [
+      "Verifiers MAY make limited allowances for mistyping"
+    ],
+    "evidence_groups": [
+      [
+        "p027-57c858daa3",
+        "p027-e07ab5ef68"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        27,
+        27
+      ]
+    ]
+  },
+  {
+    "query_id": "Q13",
+    "category": "negation",
+    "question": "May a verifier block password managers and prevent password pasting?",
+    "reference_answer": "Password managers and autofill must be allowed; paste should be permitted, a weaker recommendation.",
+    "evidence_anchors": [
+      "Verifiers SHALL allow the use of password managers"
+    ],
+    "evidence_groups": [
+      [
+        "p026-a068b6d99f"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        26
+      ]
+    ]
+  },
+  {
+    "query_id": "Q14",
+    "category": "role_constraint",
+    "question": "Who decides whether the risk of an SMS authenticator is acceptable, and what happens if it is unacceptable?",
+    "reference_answer": "The RP determines acceptable risk and communicates it to the verifier; if unacceptable to any party, the restricted authenticator must not be used and an alternative must be used.",
+    "evidence_anchors": [
+      "It is the RP’s responsibility"
+    ],
+    "evidence_groups": [
+      [
+        "p048-c559d27e0c"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        48
+      ]
+    ]
+  },
+  {
+    "query_id": "Q15",
+    "category": "exception",
+    "question": "Does issuing a fresh SMS authentication code reset the count of failed attempts?",
+    "reference_answer": "No; generating a new authentication secret must not reset the failed-authentication count.",
+    "evidence_anchors": [
+      "Generating a new authentication secret SHALL NOT reset"
+    ],
+    "evidence_groups": [
+      [
+        "p033-a19212a0b7"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        33
+      ]
+    ]
+  },
+  {
+    "query_id": "Q16",
+    "category": "control",
+    "question": "How long may an out-of-band authentication take, and can the same code be accepted twice?",
+    "reference_answer": "It is invalid unless completed within ten minutes; accept each secret once only during its validity period.",
+    "evidence_anchors": [
+      "invalid unless completed within 10"
+    ],
+    "evidence_groups": [
+      [
+        "p033-70431061f6"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        33
+      ]
+    ]
+  },
+  {
+    "query_id": "Q17",
+    "category": "exception",
+    "question": "How many failed biometric attempts are allowed before a delay, with and without presentation attack detection?",
+    "reference_answer": "At most five without qualifying PAD or ten with it, then at least 30 seconds delay per subsequent attempt; overall limits 50 or 100 respectively.",
+    "evidence_anchors": [
+      "no more than five consecutive failed authentication"
+    ],
+    "evidence_groups": [
+      [
+        "p044-9c1874d5bf"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        44
+      ]
+    ]
+  },
+  {
+    "query_id": "Q18",
+    "category": "control",
+    "question": "What is the required minimum salt size for storing password hashes?",
+    "reference_answer": "At least 32 bits; choose to minimize collisions and store salt plus hash.",
+    "evidence_anchors": [
+      "The salt SHALL be at least 32 bits"
+    ],
+    "evidence_groups": [
+      [
+        "p027-75f1adf39c"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        27
+      ]
+    ]
+  },
+  {
+    "query_id": "Q19",
+    "category": "negation",
+    "question": "Can a password hint be displayed to a person who has not authenticated?",
+    "reference_answer": "No; a hint accessible to an unauthenticated claimant must not be permitted.",
+    "evidence_anchors": [
+      "hint (e.g., a reminder"
+    ],
+    "evidence_groups": [
+      [
+        "p025-0a88aa8f78"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        25
+      ]
+    ]
+  },
+  {
+    "query_id": "Q20",
+    "category": "exception",
+    "question": "Can biometric samples be retained indefinitely to improve recognition templates?",
+    "reference_answer": "No; samples may be used locally for adaptation or research with explicit consent; erase samples and derived biometric data immediately after adaptation or research data is derived; establish an adaptation time limit.",
+    "evidence_anchors": [
+      "Biometric samples collected in the authentication process"
+    ],
+    "evidence_groups": [
+      [
+        "p045-60fde0591c"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        45
+      ]
+    ]
+  },
+  {
+    "query_id": "Q21",
+    "category": "exception",
+    "question": "Is unlocking a phone with a fingerprint enough to activate an authenticator, or can an agency waive separate biometric presentation?",
+    "reference_answer": "A separate operation is required, but agencies may lower it for CSP-managed authenticators with short timeouts and qualifying biometrics.",
+    "evidence_anchors": [
+      "The presentation of a biometric factor for authenticator activation"
+    ],
+    "evidence_groups": [
+      [
+        "p044-3ba82c3fd2"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        44
+      ]
+    ]
+  },
+  {
+    "query_id": "Q22",
+    "category": "control",
+    "question": "How many wrong local activation PIN entries are allowed before the authenticator is disabled?",
+    "reference_answer": "No more than ten consecutive failed activation attempts; disable authenticator and require a different one once reached.",
+    "evidence_anchors": [
+      "no more than 10. If an incorrect activation"
+    ],
+    "evidence_groups": [
+      [
+        "p049-204a80e3d2"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        49
+      ]
+    ]
+  },
+  {
+    "query_id": "Q23",
+    "category": "negation",
+    "question": "Can a verifier reject a password solely because it lacks uppercase letters or punctuation?",
+    "reference_answer": "No; composition rules requiring mixtures of character types must not be imposed.",
+    "evidence_anchors": [
+      "SHALL NOT impose other composition rules"
+    ],
+    "evidence_groups": [
+      [
+        "p025-ba87ffc2ee"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        25
+      ]
+    ]
+  },
+  {
+    "query_id": "Q24",
+    "category": "keyword_trap",
+    "question": "Is checking a password blocklist supposed to reject every dictionary word occurring inside a long passphrase?",
+    "reference_answer": "No; compare the entire password against the blocklist, not substrings or words within it.",
+    "evidence_anchors": [
+      "not substrings or words that might be contained therein"
+    ],
+    "evidence_groups": [
+      [
+        "p026-682e05b3d2",
+        "p026-7e43913843"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        26,
+        26
+      ]
+    ]
+  }
+]

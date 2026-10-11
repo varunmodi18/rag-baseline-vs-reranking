@@ -1,0 +1,28 @@
+{
+  "checks_passed": [
+    "unique stable chunk IDs",
+    "frozen PDF/corpus hash",
+    "10 unique shared candidate IDs for each pair",
+    "exactly 3 contexts per answer",
+    "one renderer and generation config",
+    "generation inputs reconstructed solely from question+corpus; gold records evaluated after generation",
+    "at least two distinct rank4-10 to top3 promotions",
+    "7 actual warm retrieval repetitions per query"
+  ],
+  "promotions": [
+    [
+      "Q02",
+      "p025-ba87ffc2ee",
+      8,
+      1
+    ],
+    [
+      "Q16",
+      "p033-70431061f6",
+      10,
+      1
+    ]
+  ],
+  "source_sha256": "d9ab89576b5ae2cfb3ba37781110788dea27a85a5079496dbfc1a79834670afd",
+  "corpus_sha256": "fdc0eb99d1bd8edf3a0efbebf5d635f7d2cfc777e492640c62dc20a351c0c8ac"
+}

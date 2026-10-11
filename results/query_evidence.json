@@ -1,0 +1,258 @@
+[
+  {
+    "query_id": "Q01",
+    "category": "exception",
+    "question": "Must users change passwords every 90 days, and what if a password has been compromised?",
+    "reference_answer": "No periodic changes; force a change on evidence of compromise.",
+    "evidence_anchors": [
+      "SHALL NOT require subscribers to change passwords periodically"
+    ],
+    "evidence_groups": [
+      [
+        "p025-0a88aa8f78",
+        "p084-7623bddeb9"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        25,
+        84
+      ]
+    ],
+    "baseline_all_evidence": true,
+    "reranked_all_evidence": true,
+    "evidence_shifts": [
+      {
+        "chunk_id": "p025-0a88aa8f78",
+        "pdf_page": 25,
+        "dense_rank": 4,
+        "cross_rank": 1
+      },
+      {
+        "chunk_id": "p084-7623bddeb9",
+        "pdf_page": 84,
+        "dense_rank": 1,
+        "cross_rank": 2
+      }
+    ]
+  },
+  {
+    "query_id": "Q02",
+    "category": "exception",
+    "question": "Can an eight-character password be used when it is part of multi-factor authentication?",
+    "reference_answer": "Yes; single-factor requires 15 characters; MFA-only passwords can be at least eight.",
+    "evidence_anchors": [
+      "minimum of 15 characters"
+    ],
+    "evidence_groups": [
+      [
+        "p025-ba87ffc2ee"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        25
+      ]
+    ],
+    "baseline_all_evidence": false,
+    "reranked_all_evidence": true,
+    "evidence_shifts": [
+      {
+        "chunk_id": "p025-ba87ffc2ee",
+        "pdf_page": 25,
+        "dense_rank": 8,
+        "cross_rank": 1
+      }
+    ]
+  },
+  {
+    "query_id": "Q04",
+    "category": "negation",
+    "question": "Is a voiceprint allowed as the biometric factor for authentication?",
+    "reference_answer": "No; biometric comparison based on voice must not be used.",
+    "evidence_anchors": [
+      "Biometric comparison based on voice"
+    ],
+    "evidence_groups": [
+      [
+        "p043-bafdb07455"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        43
+      ]
+    ],
+    "baseline_all_evidence": false,
+    "reranked_all_evidence": false,
+    "evidence_shifts": [
+      {
+        "chunk_id": "p043-bafdb07455",
+        "pdf_page": 43,
+        "dense_rank": 8,
+        "cross_rank": 9
+      }
+    ]
+  },
+  {
+    "query_id": "Q06",
+    "category": "keyword_trap",
+    "question": "Does a local PIN that unlocks an authenticator need the same 15-character length as a login password?",
+    "reference_answer": "No; local activation secrets require at least four characters and should be at least six, may be numeric, and remain local.",
+    "evidence_anchors": [
+      "Authenticators that use activation secrets SHALL require"
+    ],
+    "evidence_groups": [
+      [
+        "p049-5edd86be13"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        49
+      ]
+    ],
+    "baseline_all_evidence": true,
+    "reranked_all_evidence": true,
+    "evidence_shifts": [
+      {
+        "chunk_id": "p049-5edd86be13",
+        "pdf_page": 49,
+        "dense_rank": 1,
+        "cross_rank": 1
+      }
+    ]
+  },
+  {
+    "query_id": "Q08",
+    "category": "negation",
+    "question": "Can a synced passkey be used at AAL3 if it is phishing-resistant?",
+    "reference_answer": "No; AAL3 private keys must be non-exportable; syncable authenticators need exportable keys and are prohibited.",
+    "evidence_anchors": [
+      "syncable authenticators SHALL NOT be used at AAL3"
+    ],
+    "evidence_groups": [
+      [
+        "p020-1dc211d4b2",
+        "p103-630c4a45cd"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        20,
+        103
+      ]
+    ],
+    "baseline_all_evidence": true,
+    "reranked_all_evidence": true,
+    "evidence_shifts": [
+      {
+        "chunk_id": "p020-1dc211d4b2",
+        "pdf_page": 20,
+        "dense_rank": 8,
+        "cross_rank": 1
+      },
+      {
+        "chunk_id": "p103-630c4a45cd",
+        "pdf_page": 103,
+        "dense_rank": 1,
+        "cross_rank": 4
+      }
+    ]
+  },
+  {
+    "query_id": "Q16",
+    "category": "control",
+    "question": "How long may an out-of-band authentication take, and can the same code be accepted twice?",
+    "reference_answer": "It is invalid unless completed within ten minutes; accept each secret once only during its validity period.",
+    "evidence_anchors": [
+      "invalid unless completed within 10"
+    ],
+    "evidence_groups": [
+      [
+        "p033-70431061f6"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        33
+      ]
+    ],
+    "baseline_all_evidence": false,
+    "reranked_all_evidence": true,
+    "evidence_shifts": [
+      {
+        "chunk_id": "p033-70431061f6",
+        "pdf_page": 33,
+        "dense_rank": 10,
+        "cross_rank": 1
+      }
+    ]
+  },
+  {
+    "query_id": "Q19",
+    "category": "negation",
+    "question": "Can a password hint be displayed to a person who has not authenticated?",
+    "reference_answer": "No; a hint accessible to an unauthenticated claimant must not be permitted.",
+    "evidence_anchors": [
+      "hint (e.g., a reminder"
+    ],
+    "evidence_groups": [
+      [
+        "p025-0a88aa8f78"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        25
+      ]
+    ],
+    "baseline_all_evidence": false,
+    "reranked_all_evidence": false,
+    "evidence_shifts": [
+      {
+        "chunk_id": "p025-0a88aa8f78",
+        "pdf_page": 25,
+        "dense_rank": null,
+        "cross_rank": null
+      }
+    ]
+  },
+  {
+    "query_id": "Q24",
+    "category": "keyword_trap",
+    "question": "Is checking a password blocklist supposed to reject every dictionary word occurring inside a long passphrase?",
+    "reference_answer": "No; compare the entire password against the blocklist, not substrings or words within it.",
+    "evidence_anchors": [
+      "not substrings or words that might be contained therein"
+    ],
+    "evidence_groups": [
+      [
+        "p026-682e05b3d2",
+        "p026-7e43913843"
+      ]
+    ],
+    "evidence_pages": [
+      [
+        26,
+        26
+      ]
+    ],
+    "baseline_all_evidence": true,
+    "reranked_all_evidence": true,
+    "evidence_shifts": [
+      {
+        "chunk_id": "p026-682e05b3d2",
+        "pdf_page": 26,
+        "dense_rank": null,
+        "cross_rank": null
+      },
+      {
+        "chunk_id": "p026-7e43913843",
+        "pdf_page": 26,
+        "dense_rank": 2,
+        "cross_rank": 1
+      }
+    ]
+  }
+]
